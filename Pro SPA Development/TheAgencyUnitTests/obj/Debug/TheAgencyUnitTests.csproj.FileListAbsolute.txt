@@ -1,0 +1,10 @@
+C:\Projects\TheAgency\TheAgencyUnitTests\bin\TheAgency.dll
+C:\Projects\TheAgency\TheAgencyUnitTests\bin\TheAgency.pdb
+C:\Projects\TheAgency\TheAgencyUnitTests\obj\Debug\TheAgencyUnitTests.csprojResolveAssemblyReference.cache
+C:\Projects\TheAgency\TheAgencyUnitTests\obj\Debug\TheAgency.dll
+C:\Projects\TheAgency\TheAgencyUnitTests\obj\Debug\TheAgency.pdb
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgencyUnitTests\bin\TheAgency.dll
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgencyUnitTests\bin\TheAgency.pdb
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgencyUnitTests\obj\Debug\TheAgencyUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgencyUnitTests\obj\Debug\TheAgency.dll
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgencyUnitTests\obj\Debug\TheAgency.pdb

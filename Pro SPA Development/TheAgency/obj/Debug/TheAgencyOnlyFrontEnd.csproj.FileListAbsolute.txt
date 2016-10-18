@@ -1,0 +1,10 @@
+C:\Projects\TheAgency\TheAgency\bin\TheAgency.dll
+C:\Projects\TheAgency\TheAgency\bin\TheAgency.pdb
+C:\Projects\TheAgency\TheAgency\obj\Debug\TheAgencyOnlyFrontEnd.csprojResolveAssemblyReference.cache
+C:\Projects\TheAgency\TheAgency\obj\Debug\TheAgency.dll
+C:\Projects\TheAgency\TheAgency\obj\Debug\TheAgency.pdb
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgency\bin\TheAgency.dll
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgency\bin\TheAgency.pdb
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgency\obj\Debug\TheAgencyOnlyFrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgency\obj\Debug\TheAgency.dll
+C:\Users\GILF\Desktop\SPA\Chapters\Demos\TheAgency\TheAgency\obj\Debug\TheAgency.pdb

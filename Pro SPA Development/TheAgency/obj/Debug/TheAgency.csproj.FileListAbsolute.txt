@@ -1,0 +1,5 @@
+C:\Projects\TheAgency\TheAgency\bin\TheAgency.dll
+C:\Projects\TheAgency\TheAgency\bin\TheAgency.pdb
+C:\Projects\TheAgency\TheAgency\obj\Debug\TheAgency.csprojResolveAssemblyReference.cache
+C:\Projects\TheAgency\TheAgency\obj\Debug\TheAgency.dll
+C:\Projects\TheAgency\TheAgency\obj\Debug\TheAgency.pdb

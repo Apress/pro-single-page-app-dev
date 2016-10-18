@@ -1,0 +1,31 @@
+﻿@model Hijax.Models.User
+@{
+    ViewBag.Title = "Index";
+}
+@section scripts 
+{
+    <script src="~/Scripts/globalFunctions.js"></script>
+}
+
+<h2>Index</h2>
+<form id="userDetails" action="/" method="post">
+    <p>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </p>
+    <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </p>
+    <p>
+        <input type="submit">
+    </p>
+</form>
+<div id="response">
+@if (Model != null)
+{
+    <div>
+        You inserted user name: @Model.Username and password: @Model.Password
+    </div>
+}
+</div>

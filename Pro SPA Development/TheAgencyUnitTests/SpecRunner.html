@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Jasmine Spec Runner</title>
+
+    <link rel="stylesheet" type="text/css" href="jasmine/jasmine.css">
+    <script data-main="scripts/testsBootstrapper.js" src="scripts/lib/require.js"></script>
+</head>
+<body>
+    <script type="text/template" id="task-template">
+        <td><%- description %></td>
+        <td><% if (isComplete) {%>
+            <img src="images/Completed.png" alt="completed" />
+            <% } else { %>
+            <img src="images/NotCompleted.png" alt="in progress" />
+            <% } %>
+        </td>
+    </script>
+</body>
+</html>

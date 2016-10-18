@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Chat</title>
+    <link href="styles/site.css" rel="stylesheet" />
+    <link href="styles/ui-lightness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="txtMessage" autofocus="autofocus" />
+        <input type="button" id="btnSend" value="Send" />        
+        <dl id="chat">
+        </dl>
+    </div>
+    <div id="dialog">
+        <form>
+            <label for="txtDisplayName">Enter Your Name:</label>
+            <input type="text" name="txtDisplayName" id="txtDisplayName" class="text ui-widget-content ui-corner-all" />
+        </form>
+    </div>
+    <script src="Scripts/jquery-2.0.3.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.0.1.min.js"></script>
+    <script src="Scripts/jquery-ui-1.10.3.custom.min.js"></script>    
+    <script src="/signalr/hubs"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>

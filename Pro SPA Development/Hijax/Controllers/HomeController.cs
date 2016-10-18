@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Hijax.Models;
+
+namespace Hijax.Controllers
+{
+  public class HomeController : Controller
+  {
+    //
+    // GET: /Home/
+    public ActionResult Index()
+    {
+      return View();
+    }
+
+    //
+    // POST: /Home/
+    [HttpPost]
+    public ActionResult Index(FormCollection collection)
+    {
+      return View(Hijax.Models.User.CreateUser(collection["username"], 
+        collection["password"]));
+    }
+  }
+}

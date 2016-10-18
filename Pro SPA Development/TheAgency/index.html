@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MI6 Agents</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="styles/site.css" rel="stylesheet" type="text/css" />
+    <link href="styles/modern.css" rel="stylesheet" type="text/css" />
+    <script data-main="scripts/app.js" src="scripts/lib/require.js"></script>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <header>
+        <img id="pagetitleImage" alt="MI6 Agents" src="images/MI6PageHeader.png" />
+    </header>
+    <div id="body">
+        <section id="main" class="content-wrapper main-content clear-fix">
+        </section>
+    </div>
+
+    <script type="text/template" id="agent-tile-template">
+        <div id="tilecontainer">
+            <div class="tile double bg-color-gray">
+                <div class="tile-content">
+                    <div class="image">
+                        <img src="<%- imagePath %>" class="place-left" id="agentImage" alt="Agent Image"/>
+                    </div>
+                    <a id="<%- agentID %>" href="#/details/<%- agentID %>" class="moreDetails"></a>
+                    <div class="agentDetails">
+                        <span class="agenteDetailesHeaders">Name:</span>  <%- firstName %> <%- lastName %>
+                    </div>
+                    <div class="agentDetails">
+                        <span class="agenteDetailesHeaders">Code Name:</span>  <%- codeName %>
+                    </div>
+                    <div class="agentDetails">
+                        <span class="agenteDetailesHeaders">Description:</span>   <%- description %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="details-template">
+        <div>
+            <img class="whirl" src="images/whirl.png" />
+            <div class="float-left">
+                <h2>Agent Details</h2>
+                <div class="seperatorDiv"></div>
+                <fieldset>
+                    <legend>Agent</legend>
+                    <div class="display-field">
+                        <img src="<%- imagePath %>" alt="Agent Image"/>
+                    </div>
+                    <div style="float: left">
+                        <div class="display-label">
+                            First Name: <br />
+                            Last Name: <br />
+                            Code Name: <br />
+                            Description:
+                        </div>
+                    </div>
+                    <div>
+                        <div id="agentDetails" class="display-field">
+                            <%- firstName %><br />
+                            <%- lastName %><br />
+                            <%- codeName %><br />
+                            <%- description %>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="float-left assignment-padding">
+                <h2>Assignments</h2>
+                <div class="seperatorDiv"></div>
+                <table id="taskTable">
+                    <tr>
+                        <td colspan="2"><input id="txtNewTask" type="text" autofocus="autofocus" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clear align-center">
+                <input id="btnEditAgent" type="button" value="Edit" class="default"/>
+                <input id="btnDeleteAgent" type="button" value="Delete" class="default"/>
+                <input id="btnBack" type="button" value="Back" class="default"/>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="task-template">
+        <td><%- description %></td>
+        <td><% if (isComplete) {%>
+            <img src="images/Completed.png" alt="completed" />
+            <% } else { %>
+            <img src="images/NotCompleted.png" alt="in progress" />
+            <% } %>
+        </td>
+    </script>
+
+    <script type="text/template" id="edit-template">
+        <div class='modal-header'>Edit Agent</div>
+        <div id="validationError" class="red"></div>
+        <form>
+            <label for="txtFirstName">First Name: </label><input id="txtFirstName" type="text" value="<%- firstName %>"/><br />
+            <label for="txtLastName">Last Name: </label><input id="txtLastName" type="text" value="<%- lastName %>"/><br />
+            <label for="txtCodeName">Code Name:</label><input id="txtCodeName" type="text" value="<%- codeName %>"/><br />
+            <label for="txtDescription">Description: </label><input id="txtDescription" type="text" value="<%- description %>"/><br/>
+            <input id='saveEditButton' type='button' value='Save' />
+        </form>
+    </script>
+
+    <script type="text/template" id="create-template">
+        <div>
+            <img class="whirl" src="images/whirl.png" />
+            <div class="float-left">
+                <h2>Create Agent</h2>
+                <div class="seperatorDiv"></div>
+                <fieldset>
+                    <legend>Agent Details</legend>
+                    <div>
+                        <div id="validationError" class="red"></div>
+                        <div>
+                            <form>
+                                <label for="txtFirstName">First Name: </label><input id="txtFirstName" type="text" value="<%- firstName %>" /><br />
+                                <label for="txtLastName">Last Name: </label><input id="txtLastName" type="text" value="<%- lastName %>" /><br />
+                                <label for="txtCodeName">Code Name:</label><input id="txtCodeName" type="text" value="<%- codeName %>" /><br />
+                                <label for="txtDescription">Description: </label><input id="txtDescription" type="text" value="<%- description %>" /><br/>
+                                <label for="txtImage">Image Path: </label><input id="txtImage" type="file" value="<%- imagePath %>"/>
+                            </form>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="clear align-center">
+                <input id="saveEditButton" type="button" value="Save" class="default"/>
+                <input id="btnBack" type="button" value="Back" class="default"/>
+            </div>
+        </div>
+    </script>
+</body>
+</html>
